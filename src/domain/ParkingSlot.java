@@ -4,35 +4,28 @@ public class ParkingSlot {
     private final int slotNumber;
     private Car parkedCar;
 
-    public ParkingSlot (int slotNumber)
-    {
+    public ParkingSlot(int slotNumber) {
         this.slotNumber = slotNumber;
         this.parkedCar = null;
     }
 
-    public int getSlotNumber ()
-    {
+    public int getSlotNumber() {
         return slotNumber;
     }
 
-    public boolean isAvailable()
-    {
+    public boolean isAvailable() {
         return parkedCar == null;
     }
 
-    public void assignCar (Car car)
-    {
+    public void assignCar(Car car) {
         this.parkedCar = car;
     }
 
-    public void removeCar ()
-    {
+    public void removeCar() {
         this.parkedCar = null;
     }
 
-    public Car getParkedCar ()
-    {
+    public Car getParkedCar() {
         return parkedCar;
     }
 }
-
